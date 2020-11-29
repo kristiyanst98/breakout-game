@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         var move = new Vector3(Input.GetAxisRaw("Horizontal"), _rigidbody.velocity.y, _rigidbody.velocity.z);
-        transform.position += move * _speed * Time.deltaTime;
+        transform.position += move * _speed * Time.deltaTime *1.5f;
         //_rigidbody.MovePosition(new Vector3(Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, 0, 50)).x, -17, 0));  
     }
 }
