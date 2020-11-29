@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         SwitchState(State.MENU);
-        
+        PlayerPrefs.DeleteKey("highscore");
     }
 
    
